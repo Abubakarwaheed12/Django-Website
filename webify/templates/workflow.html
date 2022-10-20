@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block corecss %}
+    <link rel="stylesheet" href="{% get_static_prefix %}assets/css/workflow.css">
+    {% endblock%}
+    
+{% block content %}
+    <!--HERO SECTION -->
+    <section class="hero_section">
+     <!-- header text -->
+     <div class="workflow_header_text">
+        <h2>Workflow</h2>
+        <p>Webify is a Fintech focused SEO Agency.</p>
+    </div>
+    </section>
+    <!----------------MODAL POPUP FORM ------->
+    <section class="modal_popup">
+      <div class="modal_form" id="form_content">
+        <div class="form_data"> 
+     <div class="close_btn">
+        <i class="fa-solid fa-xmark"></i>
+     </div>
+      <div class="form_text">
+        <h2>What Makes Us Different?</h2>
+        <p>Please fill out the short form below with your project details 
+            and we will be in touch shortly.</p>
+      </div>  
+      <div class="form">
+        <div class="form_flex1">
+            <div class="name">
+                <span class="name_icon">
+            <input type="text" name="" placeholder="Name">
+        </span>
+        </div>
+        <div class="email">
+            <span class="email_icon">
+            <input type="email" name="" placeholder="Email">
+        </span>
+        </div>
+            
+        </div>
+        <div class="form_flex1">
+            <div class="url">
+           <span class="url_icon">
+                <input type="url" name="" placeholder="Your Website URL">
+            </span>
+            </div>
+            <div class="budget">
+                <span class="bug_icon">
+            <select name="" id="">
+                <option value="">Your Budget</option>
+                <option value="">3500-2500</option>
+                <option value="">3500-5000</option>
+                <option value="">3500-5000</option>
+            </select>
+        </span>
+        </div>
+        </div>
+        <div class="message">
+            <span class="mes">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        </span>
+        </div>
+        <div class="send_btn">
+            <span class="btn_icon">
+            <input type="button" value="Send Me A Proposal">
+                <img src="{% get_static_prefix %}assets/images/arrow.png" alt="">
+            </span>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+<!-- ----------------SECTION 1------------- -->
+   
+    <section class="strategic_approach">
+        <div class="container">
+        <h3>Our Strategic Approach</h3>
+        <p>Mauris ac nisi lectus. Donec ac libero nec dui ullamcorper facilisis. Sed vehicula rhoncus magna, et porttitor arcu semper sit amet. Nam gravida libero eget suscipit fringilla. Quisque vel ante sollicitudin, rhoncus ex quis, feugiat leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc venenatis ac orci a faucibus. Nulla porttitor purus ac nisl mattis, a accumsan mauris aliquam. Integer auctor risus eu tortor porttitor vulputate. Curabitur in ullamcorper lectus. Sed tempus, nisl vitae accumsan euismod, arcu lectus rutrum ante, eget pulvinar sapien lacus a ligula. Duis sagittis enim dapibus dui suscipit, eget feugiat massa finibus. Nulla cursus diam nibh, et accumsan magna iaculis ultricies.</p>
+        <div class="stra_request_purposal" >
+            <a href="#" class="form_btn">request purposal
+                <span class="req_icon"><img src="{% get_static_prefix %}assets/images/arrow.png" alt="" /></span></a>
+        </div>
+    </div>
+    </section>
+   
+
+
+</div>
+
+    <!-- --------------WORKFLOW------------ -->
+    <section class="work_flow">
+    <div class="container">
+        <div class="w_flow">
+            <div class="our_workflow">
+                <div class="circle_outline_1">
+                <div class="circle_outline_2">
+                    <div class="circle_outline_3">
+                        <p>Our Workflow </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="workflow_steps">
+                <div class="step1">  
+                    <div class="w_f_flex">
+                    <div class="w_f_num">
+                        <p>01</p>
+                    </div>  
+                    <div class="w_f_t">
+                        <h4>Normalize Search Data</h4>
+                        <p>Search data aggregation from multiple sources into a workable dashboard</p>
+                    </div>
+                </div>
+                </div>
+                <div class="step2">  
+                    <div class="w_f_flex">
+                        <div class="w_f_num">
+                            <p>02</p>
+                        </div>  
+                        <div class="w_f_t">
+                            <h4>Diagnostics and Audit</h4>
+                            <p>We take a tactical, in the trenches approach to 
+                                execution with scalable & predictable growth</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="step3">   
+                    <div class="w_f_flex">
+                        <div class="w_f_num">
+                            <p>03</p>
+                        </div>  
+                        <div class="w_f_t">
+                            <h4>Content 3.0</h4>
+                            <p>Building a content  strategy; Highly focused  
+                                on value to users and Semantic SEO principles </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="step4">  
+                    <div class="w_f_flex">
+                        <div class="w_f_num">
+                            <p>04</p>
+                        </div>  
+                        <div class="w_f_t">
+                            <h4>Pareto Principle</h4>
+                            <p>We focus on the 20% of opportunities that 
+                                matter the most; & make the biggest impact </p>
+                        </div>
+                    </div>   
+                </div>
+                <div class="step5">   
+                    <div class="w_f_flex">
+                        <div class="w_f_num">
+                            <p>05</p>
+                        </div>  
+                        <div class="w_f_t">
+                            <h4>Tactical Strategy</h4>
+                            <p>We take a tactical, in the trenches approach to 
+                                execution with scalable & predictable growth</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+<!-- js for menu  -->
+    <script>
+    $(document).ready(function(){
+        $(".toggle").click(function(){
+            // $(".menu.active").toggleClass("active");
+            $(".menu").toggleClass("active");
+            $(".toggle").toggleClass("active");
+        })
+
+        // js for for popup form
+        $(".form_btn").click(function(){
+            $('#form_content').show();
+        })
+        //close button
+        $('.close_btn').click(function(){
+            $('#form_content').hide();
+        })
+
+      });
+   </script>
+</body>
+</html>

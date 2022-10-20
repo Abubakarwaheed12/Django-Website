@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block corecss %}
+    <link rel="stylesheet" href="{% get_static_prefix %}assets/css/services.css">
+    {% endblock%}
+    
+{% block content %}
+    <!--HERO SECTION -->
+    <section class="hero_section">
+     <!-- header text -->
+     <div class="workflow_header_text">
+        <h2>Services</h2>
+        <p style="max-width:535px; margin:0 auto;">At the heart of everything, Webify is a digital strategy 
+            consulting agency.</p>
+    </div>
+    </section>
+<!----------------MODAL POPUP FORM ------->
+<section class="modal_popup">
+    <div class="modal_form" id="form_content">
+      <div class="form_data"> 
+   <div class="close_btn">
+      <i class="fa-solid fa-xmark"></i>
+   </div>
+    <div class="form_text">
+      <h2>What Makes Us Different?</h2>
+      <p>Please fill out the short form below with your project details 
+          and we will be in touch shortly.</p>
+    </div>  
+    <div class="form">
+      <div class="form_flex1">
+          <div class="name">
+              <span class="name_icon">
+          <input type="text" name="" placeholder="Name">
+      </span>
+      </div>
+      <div class="email">
+          <span class="email_icon">
+          <input type="email" name="" placeholder="Email">
+      </span>
+      </div>
+          
+      </div>
+      <div class="form_flex1">
+          <div class="url">
+         <span class="url_icon">
+              <input type="url" name="" placeholder="Your Website URL">
+          </span>
+          </div>
+          <div class="budget">
+              <span class="bug_icon">
+          <select name="" id="">
+              <option value="">Your Budget</option>
+              <option value="">3500-2500</option>
+              <option value="">3500-5000</option>
+              <option value="">3500-5000</option>
+          </select>
+      </span>
+      </div>
+      </div>
+      <div class="message">
+          <span class="mes">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+      </span>
+      </div>
+      <div class="send_btn">
+          <span class="btn_icon">
+          <input type="button" value="Send Me A Proposal">
+              <img src="{% get_static_prefix %}assets/images/arrow.png" alt="">
+          </span>
+      </div>
+    </div>
+  </div>
+    </div>
+  </section>
+
+<!-- -----------------SERVICES ----------------->
+<section class="services_we_offer">
+    <div class="container">
+        <div class="ser_text">
+         <h2>Our focused area of <span style="color:#ff961c;">specialization</span></h2>
+        </div>
+        <div class="service_flex_1">
+            <div class="gr_ser">
+                <div class="gr_ser_cnt">
+                    <img src="{% get_static_prefix %}assets/images/sec4_img1.png" alt="">
+                    <h3>Growth Strategy</h3>
+                    <p>We lead with data and make decisions based on experience. Our approach to growth focuses on sustainability first; we’re not
+                        interested in delivering a “flash in the pan” to our growth focused clients.</p>
+                    <ul class="list">
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>Competitive Analysis, a 360° Market study</li>
+                        </span>
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>International growth opportunities</li>
+                        </span>
+                    </ul>
+                    <div class="view_details growth_btn">
+                        <a href="#">view details
+                            <span><img src="{% get_static_prefix %}assets/images/arrow.png" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gr_ser">
+                <div class="gr_ser_cnt">
+                    <img src="{% get_static_prefix %}assets/images/sec4_img2.png" alt="">
+                    <h3>Analytics & Diagnostics</h3>
+                    <p>They say the devil is in the details, and so are we. We leverage cutting edge analytics, attribution, and diagnostics solutions to empower our decision making. .</p>
+                    <ul class="list">
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>Attribution modelling</li>
+                        </span>
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>Analytics implementations</li>
+                        </span>
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>Business intelligence dashboards</li>
+                        </span>
+                    </ul>
+                    <div class="view_details analytic_btn">
+                        <a href="#">view details
+                            <span><img src="{% get_static_prefix %}assets/images/arrow.png" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          
+
+            <div class="gr_ser">
+                <div class="gr_ser_cnt">
+                    <img src="{% get_static_prefix %}assets/images/sec4_img3.png" alt="">
+                    <h3>Enterprise Technical Auditing</h3>
+                    <p>We’re not scared of multi-million page websites. We understand the nuances to crawling, auditing, and analyzing the biggest (and most complex) websites on the internet. Our technical audits prioritize for impact. </p>
+                    <ul class="list">
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>Indexation and Crawlability Issues</li>
+                        </span>
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>Information architecture optimization</li>
+                        </span>
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>Internal linking strategy</li>
+                        </span>
+                    </ul>
+                    <div class="view_details Enterprise_btn">
+                        <a href="#">view details
+                            <span><img src="{% get_static_prefix %}assets/images/arrow.png" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+
+        <!-- services flex 2 -->
+        <div class="services_flex_2">
+            <div class="gr_ser product">
+                <div class="gr_ser_cnt">
+                    <img src="{% get_static_prefix %}assets/images/product.png" alt="">
+                    <h3>Product-Led Content (3.0)</h3>
+                    <p>3.0 is the next generation of content creation, distribution, and amplification.
+                        <br><br>
+                        Semantic SEO and how most financial content production misses the mark
+                        
+                        Natural language content. 
+                        </p>
+                    <ul class="list">
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>Content audits</li>
+                        </span>
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>Content structure optimization</li>
+                        </span>
+                        <span class="item">
+                            <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                        <li>Strategic content plan </li>
+                        </span>
+                    </ul>
+                    <div class="view_details product_btn">
+                        <a href="#">view details
+                            <span><img src="{% get_static_prefix %}assets/images/arrow.png" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+
+
+                <div class="gr_ser link">
+                    <div class="gr_ser_cnt">
+                        <img src="{% get_static_prefix %}assets/images/link.png" alt="">
+                        <h3>Link Strategy</h3>
+                        <p>We design strategies first and foremost for filling gaps. We don’t make link acquisition recommendations just for the sake of “more links,” and instead design strategies with measured intentions from the outset. </p>
+                        <ul class="list">
+                            <span class="item">
+                                <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                            <li>Link profile audits</li>
+                            </span>
+                            <span class="item">
+                                <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                            <li>PR: Promotion and amplification</li>
+                            </span>
+                            <span class="item">
+                                <img src="{% get_static_prefix %}assets/images/r_icon.png" alt="">
+                            <li>Link Acquisition</li>
+                            </span>
+                        </ul>
+                        <div class="view_details link_btn">
+                            <a href="#">view details
+                                <span><img src="{% get_static_prefix %}assets/images/arrow.png" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <div class="stra_request_purposal">
+            <a href="#" class="form_btn">request purposal
+                <span class="req_icon"><img src="{% get_static_prefix %}assets/images/arrow.png" alt="" /></span></a>
+        </div>
+        <!--------->
+    </div>
+    </div>
+    </div>
+</section>
+
+{% endblock %}
+ 
+    <script src="{% get_static_prefix %}assets/jquery/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+         $(".toggle").click(function(){
+                // $(".menu.active").toggleClass("active");
+                $(".menu").toggleClass("active");
+                $(".toggle").toggleClass("active");
+            })
+
+                    // js for for popup form
+        $(".form_btn").click(function(){
+            $('#form_content').show();
+        })
+        //close button
+        $('.close_btn').click(function(){
+            $('#form_content').hide();
+        })
+          });
+       </script>
+</body>
+</html>

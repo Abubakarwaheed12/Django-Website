@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block corecss %}
+    <link rel="stylesheet" href="{% get_static_prefix %}assets/css/case_study.css">
+    {% endblock%}
+    
+{% block content %}
+    <!--HERO SECTION -->
+    <section class="hero_section">
+     <!-- header text -->
+     <div class="workflow_header_text">
+        <h2>Case studies</h2>
+        <p>Webify is a Fintech focused SEO Agency.</p>
+    </div>
+    </section>
+
+<!----------------MODAL POPUP FORM ------->
+<section class="modal_popup">
+    <div class="modal_form " id="form_content">
+      <div class="form_data"> 
+   <div class="close_btn">
+      <i class="fa-solid fa-xmark"></i>
+   </div>
+    <div class="form_text">
+      <h2>What Makes Us Different?</h2>
+      <p>Please fill out the short form below with your project details 
+          and we will be in touch shortly.</p>
+    </div>  
+    <div class="form">
+      <div class="form_flex1">
+          <div class="name">
+              <span class="name_icon">
+          <input type="text" name="" placeholder="Name">
+      </span>
+      </div>
+      <div class="email">
+          <span class="email_icon">
+          <input type="email" name="" placeholder="Email">
+      </span>
+      </div>
+          
+      </div>
+      <div class="form_flex1">
+          <div class="url">
+         <span class="url_icon">
+              <input type="url" name="" placeholder="Your Website URL">
+          </span>
+          </div>
+          <div class="budget">
+              <span class="bug_icon">
+          <select name="" id="">
+              <option value="">Your Budget</option>
+              <option value="">3500-2500</option>
+              <option value="">3500-5000</option>
+              <option value="">3500-5000</option>
+          </select>
+      </span>
+      </div>
+      </div>
+      <div class="message">
+          <span class="mes">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+      </span>
+      </div>
+      <div class="send_btn">
+          <span class="btn_icon">
+          <input type="button" value="Send Me A Proposal">
+              <img src="{% get_static_prefix%}assets/images/arrow.png" alt="">
+          </span>
+      </div>
+    </div>
+  </div>
+    </div>
+  </section>
+
+  <!----------CASE STUDIES------------>
+  <section class="investing ">
+    <div class="container">
+    <h2>Featured Case Study <span style="color:#f8842f;">Investing.com</span> </h2>
+     <div class="bussiness_unit">
+        <h3>Growing a new business unit, <br>
+            the Stocks subfolder case study
+            </h3>
+            <p>We identified a growth opportunity within the Stocks category of Investing.com</p>
+            <div class="container1">
+            <div class="obj_flex">
+                <div class="obj1">
+                    <div class="obj1_cnt">
+                    <img src="{% get_static_prefix%}assets/images/objectives.png" alt="">
+                    <h4>Objective</h4>
+                    <h5>Investing.com wasn’t known for its stocks section, the objective was to grow it via SEO to become a significant global player in the world of Stocks.
+                    </h5>
+                </div>
+                </div>
+                <div class="obj1">
+                    <div class="obj1_cnt">
+                    <img src="{% get_static_prefix%}assets/images/method.png" alt="">
+                    <h4>Method</h4>
+                    <h5>We started with category pruning; removed tons of less important stock pages, built a new internal links strategy, including automated links from news, added content to these new pages, and focused heavily on link building via digital PR.
+                    </h5>
+                </div>
+                </div>
+                <div class="obj1">
+                    <div class="obj1_cnt">
+                    <img src="{% get_static_prefix%}assets/images/result.png" alt="">
+                    <h4>Result </h4>
+                    <h5>Growing the /equities/ category  from 3M to 15M monthly organic sessions in 14 months via technical changes, hreflang tests for discoverability, and link building.c
+                    </h5>
+                </div>
+                </div>
+            </div>
+
+            <!-- Product-Led SEO: A programmatic SEO case study -->
+            <div class="progra">
+                <h2>Product-Led SEO: A programmatic SEO case study</h2>
+                <img src="{% get_static_prefix%}assets/images/progra.png" alt="">
+            </div>
+     </div>
+
+    </div>
+    </section>
+
+       <!-- Scalable Link Acquisition -->
+       <section class="bg">
+       <div class=" container">
+       <div class="bussiness_unit Acquisition">
+        <h3>Scalable Link Acquisition</h3>
+            <p>We figured out what Financial journalists are looking for when reporting companies’ earnings, the results were beyond our expectations.</p>
+            <div class="container1">
+            <div class="obj_flex">
+                <div class="obj1">
+                    <div class="obj1_cnt">
+                    <img src="{% get_static_prefix%}assets/images/objectives.png" alt="">
+                    <h4>Objective</h4>
+                    <h5>Obtain hundreds of new links from top media outlets
+                    </h5>
+                </div>
+                </div>
+                <div class="obj1">
+                    <div class="obj1_cnt">
+                    <img src="{% get_static_prefix%}assets/images/method.png" alt="">
+                    <h4>Method</h4>
+                    <h5>We’ve realized that we can use Investing.com’s users’ search data, to build a real-time trending stocks tool. This is a table of data that is 100% automated, showing a list of trending stocks in real-time. From both site and app, by country.
+                    </h5>
+                </div>
+                </div>
+                <div class="obj1">
+                    <div class="obj1_cnt">
+                    <img src="{% get_static_prefix%}assets/images/result.png" alt="">
+                    <h4>Result </h4>
+                    <h5>Over 3,400 linking domains in 24 months.
+                    </h5>
+                </div>
+                </div>
+            </div>
+              <!-- Product-Led SEO: A programmatic SEO case study -->
+              <div class="progra">
+                <h2>Scalable Link Acquisition;
+                    40k to 140k Referring Domains
+                    </h2>
+                <img src="{% get_static_prefix%}assets/images/scale.png" alt="">
+            </div>
+        </div>
+          
+     </div>
+     </div>
+    </section>
+<!-- International SEO - Scaling localized content from 1 to 33 languages. -->
+
+<section class="international">
+    <div class="container">
+<div class="bussiness_unit  Acquisition">
+    <h3 class="inter_text">International SEO - Scaling localized content from 1 to 33 languages</h3>
+        <div class="container1">
+        <div class="obj_flex">
+            <div class="obj1">
+                <div class="obj1_cnt">
+                <img src="{% get_static_prefix%}assets/images/objectives.png" alt="">
+                <h4>Objective</h4>
+                <h5>Grow Investing.com into a multilingual site.
+                    <br><br>
+                    We identified significant audience development opportunities by expanding our SEO strategy into additional languages.
+                    </h5>
+            </div>
+            </div>
+            <div class="obj1">
+                <div class="obj1_cnt">
+                <img src="{% get_static_prefix%}assets/images/method.png" alt="">
+                <h4>Method</h4>
+                <h5>Each site was not only translated. Each geo market was deeply researched based on the behavior of that country’s traffic on the main, global site. 
+                    <br><br>
+                    We tailored quotes, news, analysts, charts, and language to fit each country’s culture, taste, and interests.
+                    </h5>
+            </div>
+            </div>
+            <div class="obj1">
+                <div class="obj1_cnt">
+                <img src="{% get_static_prefix%}assets/images/result.png" alt="">
+                <h4>Result </h4>
+                <h5>Investing.com is now available in 33 country editions. 8 separate English editions, and 
+                    a total of 22 languages. 
+                    This approach has helped Investing.com grow to over 250M monthly sessions, and becoming the largest financial markets website globally.
+                    </h5>
+            </div>
+            </div>
+        </div>
+
+        <!-- Product-Led SEO: A programmatic SEO case study -->
+        <div class="progra">
+            <div class="language_edi">
+            <h3>International SEO - taking Investing.com 
+                from 1 to 33 language editions
+                </h3>
+            </div>
+            <img src="{% get_static_prefix%}assets/images/country_graph.png" alt="">
+        </div>
+ </div>
+</div>
+</section>
+{% endblock %}
+ 
+    <!-- js for menu  -->
+    <script src="{% get_static_prefix%}assets/jquery/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".toggle").click(function(){
+                // $(".menu.active").toggleClass("active");
+                $(".menu").toggleClass("active");
+                $(".toggle").toggleClass("active");
+            })
+                // js for for popup form
+        $(".form_btn").click(function(){
+            $('#form_content').show();
+        })
+        //close button
+        $('.close_btn').click(function(){
+            $('#form_content').hide();
+        })
+
+          });
+       </script>
+</body>
+</html>

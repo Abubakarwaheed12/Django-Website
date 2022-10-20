@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HOME</title>
+    {% block corecss %}
+    <link rel="stylesheet" href="{% get_static_prefix %}assets/css/style.css">
+    {% endblock %}
+    <link rel="stylesheet" href="{% get_static_prefix %}assets/css/workflow.css"/>
+    <script src="{% get_static_prefix %}assets/jquery/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="{% get_static_prefix %}assets/jq plugin/slick1/slick/slick.css">
+    <script src="https://kit.fontawesome.com/777a0b0f94.js" crossorigin="anonymous"></script>
+   <script src="{% get_static_prefix %}assets/js/app.js"></script>
+</head>
+
+<body>
+    <!-- ---------------HEADER----------- -->
+    <header class="header">
+        <div class="container">
+            <!-- ---------NAVBAR ------------->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="{% url 'home' %}"><img src="{% get_static_prefix %}assets/images/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="{% url 'home' %}">home</a></li>
+                        <li><a href="{% url 'ser' %}">services</a></li>
+                        <li><a href="{% url 'workflow' %}">workflow</a></li>
+                        <li><a href="{% url 'case' %}">case studies</a></li>
+                        <li><a href="{% url 'about' %}">about</a></li>
+                        <!-- <li class="request_purposal">
+                            <a href="#" class="form_btn">request purposal
+                                <span class="req_icon"><img src="assets/images/arrow.png" alt="" /></span></a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="request_purposal">
+                     <a href="#" class="form_btn form_btn2">request purposal
+                    <span class="req_icon"><img src="{% get_static_prefix %}assets/images/arrow.png" alt="" /></span></a>
+                </div>
+                <div class="toggle">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+       
+        </div>
+    </header>
+    {% block content%}
+   
+{% endblock %}
+    <!--------------------SECTION 5 -------------------->
+    <section class="section_5">
+    <div class="container">
+        <div class="sec5">
+            <h2>Customer Experiences</h2>
+            <div class="focus">
+                <div class="focus1">
+                    <div class="test_photo">
+                        <img src="{% get_static_prefix %}assets/images/sec5_img1.png" alt="">
+                    </div>
+                    <center>
+                        <div class="sec3_icon">
+                            <p>“</p>
+                        </div>
+                    </center>
+                    <div class="sec3_text def">
+                        <p>Working with Igal is a treat! When it comes to understanding SEO inside out and how to apply
+                            it in organizations of different sizes and industries, he really is the best of the best.
+                        </p>
+                    </div>
+                    <div class="sec3_name">
+                        <p> <b style="color:#ffff;"> Anat Sneh ,</b> Director of Digital
+                            Marketing <br>
+                            Intelligence Solution, SimilarWeb</p>
+                        <div class="test_img">
+                            <img src="{% get_static_prefix %}assets/images/sec5_img3.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="focus1">
+                    <div class="test_photo">
+                        <img src="{% get_static_prefix %}assets/images/sec5_img2.png" alt="">
+                    </div>
+                    <center>
+                        <div class="sec3_icon">
+                            <p>“</p>
+                        </div>
+                    </center>
+                    <div class="sec3_text def">
+                        <p>I've been working with Igal for over 8 years, and will recommend his new agency to anyone
+                            who's looking for a genuine organic growth strategy. Igal is not just an SEO expert, he
+                            truly gets International Search, a rare mix of Technical and Marketing-oriented SEO.</p>
+                    </div>
+                    <div class="sec3_name">
+                        <p> <b style="color:#ffff;">Neta Geffen ,</b> Director of Organic
+                            Growth, Miro </p>
+                        <div class="test_img">
+                            <img src="{% get_static_prefix %}assets/images/sec5_img4.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--------------------SECTION 6 -------------------->
+    <section class="section_6">
+      <div class="container">
+        <div class="sec6">
+            <div class="bub">
+                <img src="{% get_static_prefix %}assets/images/bubles.png" alt="">
+            </div>
+            <h2>How to get started
+            </h2>
+            <p>Get in touch with us at <span><a  href="#"> seo@webify.io</a></span> </p>
+            <div class="stra_request_purposal sec6_btn">
+                <a href="#" class="form_btn">request purposal
+                    <span class="req_icon"><img src="{% get_static_prefix %}assets/images/arrow.png" alt="" /></span></a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--------------------FOOTER-------------------->
+    <footer>
+    <div class="footer">
+        <div class="container">
+            <div class="ftr_content">
+                <div class="ftr_logo">
+                   <a href="{% url 'home' %}"><img src="{% get_static_prefix %}assets/images/footer_logo.png" alt=""></a> 
+                    <p>Terms & Conditions . Privacy Policy</p>
+                </div>
+                <div class="navi">
+                    <h2>Navigation</h2>
+                    <div class="btm_line_ftr"></div>
+                    <div class="ftr_menu">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="{% url 'ser' %}">Services</a></li>
+                            <li><a href="{% url 'workflow' %}">Workflow</a></li>
+                            <li><a href="{% url 'case' %}">Case Studies</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ftr_services">
+                    <h2>Services</h2>
+                    <div class="btm_line_ftr"></div>
+                    <div class="ftr_menu">
+                        <ul>
+                            <li><a href="">Growth Strategy</a></li>
+                            <li><a href="">Analytics & Diagnostics</a></li>
+                            <li><a href="">Enterprise Technical Auditing</a></li>
+                            <li><a href="">Product-Led Content (3.0)</a></li>
+                            <li><a href="">Link Strategy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social">
+                    <h2>Social</h2>
+                    <div class="btm_line_ftr"></div>
+                    <div class="ftr_icons">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2022 <a href="" style="color:white; text-decoration: none; font-size:17px ;"> Webify.</a> All
+                    Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- js for menu  -->
+<script src="{% get_static_prefix %}assets/jq plugin/slick1/slick/slick.min.js"></script>
+<script src="{% get_static_prefix %}assets/js/app.js"></script>
+    <script>
+        
+    $(document).ready(function(){
+        $(".toggle").click(function(){
+            // $(".menu.active").toggleClass("active");
+            $(".menu").toggleClass("active");
+            $(".toggle").toggleClass("active");
+        })
+
+        // js for for popup form
+        $(".form_btn").click(function(){
+            $('#form_content').show();
+        })
+        //close button
+        $('.close_btn').click(function(){
+            $('#form_content').hide();
+        })
+
+        // slider
+        
+      });
+   </script>
+</body>
+</html>

@@ -14,8 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from webify import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home , name='home'),
+    path('about/', views.about , name='about'),
+    path('services/',views.services , name='ser'),
+    path('workflow/',views.workflow , name='workflow'),
+    path('caseStudy/',views.casestudy , name='case'),
 ]
